@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="shortcut icon" href="../allfiles/Cat.jpg" type="image/x-icon">
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        /**
+         * <table>
+         *      <tr>
+         *          <th>Name</th>
+         *          <th>Age</th>
+         *      </tr>
+         *      <tr>
+         *          <td>Raju</td>
+         *          <td>22</td>
+         *      </tr>
+         *      <tr>
+         *          <td>Ravi</td>
+         *          <td>24</td>
+         *      </tr>
+         * </table>
+         */
+        // Creating Elements
+        let table = document.createElement("table");
+        let row1 = document.createElement("tr");
+        let row2 = document.createElement("tr");
+        let row3 = document.createElement("tr");
+        // Row1 -> Heading
+        let heading1 = document.createElement("th");
+        let heading2 = document.createElement("th");
+        // Row2 -> Table Data
+        let row2td1 = document.createElement("td");
+        let row2td2 = document.createElement("td");
+        // Row3 -> Table Data
+        let row3td1 = document.createElement("td");
+        let row3td2 = document.createElement("td");
+
+        // Inserting text into tags
+
+        // heading
+        heading1.innerText = "Name";
+        heading2.innerText = "Age";
+
+        // row2 data
+        row2td1.innerText = "Raju";
+        row2td2.innerText = "21";
+
+        // row3 data
+        row3td1.innerText = "Ravi";
+        row3td2.innerText = "24";
+
+        // Appending Tags
+        row1.appendChild(heading1);
+        row1.appendChild(heading2);
+
+        row2.appendChild(row2td1);
+        row2.appendChild(row2td2);
+
+        row3.appendChild(row3td1);
+        row3.appendChild(row3td2);
+
+        table.appendChild(row1);
+        table.appendChild(row2);
+        table.appendChild(row3);
+
+        document.body.appendChild(table);
+
+    </script>
+</body>
+</html>

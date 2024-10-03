@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="shortcut icon" href="../allfiles/Cat.jpg" type="image/x-icon">
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <P>WELCOME TO MY PROGRAM</P>
+    <div>
+        <h1>Heyaa!! from India</h1>
+        <h2>They are so colourfull</h2>
+        <ul>
+            <li>Unicorn</li>
+            <li>Marshmallow</li>
+            <li>Rainbow</li>
+        </ul>
+    </div>
+    <script>
+    let table = document.createElement("table");
+        let row1 = document.createElement("tr");
+        let row2 = document.createElement("tr");
+        let row3 = document.createElement("tr");
+        // Row1 -> Heading
+        let heading1 = document.createElement("th");
+        let heading2 = document.createElement("th");
+        // Row2 -> Table Data
+        let row2td1 = document.createElement("td");
+        let row2td2 = document.createElement("td");
+        // Row3 -> Table Data
+        let row3td1 = document.createElement("td");
+        let row3td2 = document.createElement("td");
+
+        // Inserting text into tags
+
+        // heading
+        heading1.innerText = "birds";
+        heading2.innerText = "animals";
+
+        // row2 data
+        row2td1.innerText = "peacock";
+        row2td2.innerText = "rabbit";
+
+        // row3 data
+        row3td1.innerText = "parrot";
+        row3td2.innerText = "dog";
+
+        // Appending Tags
+        row1.appendChild(heading1);
+        row1.appendChild(heading2);
+
+        row2.appendChild(row2td1);
+        row2.appendChild(row2td2);
+
+        row3.appendChild(row3td1);
+        row3.appendChild(row3td2);
+
+        table.appendChild(row1);
+        table.appendChild(row2);
+        table.appendChild(row3);
+
+        document.body.appendChild(table);
+    </script>
+    <div>
+        <h2>Hola</h2>
+        <p>india is a greatest country,the people over here are so friendly we can be so comfortable with them because the people are been treated as their own friends and family members they wont show any partiality.</p>
+    </div>
+    <div>
+        <h>INDIA</h>
+        <h3>It is rich in culture</h3>
+    </div>
+    <div>
+        <p>
+        <h2>JavaScript is the world's most popular programming language</h2>
+        <h3>JavaScript is the programming language of the Web</h3>
+        <h4>JavaScript is easy to learn</h4>
+        </p>
+    </div>
+</body>
+</html>
